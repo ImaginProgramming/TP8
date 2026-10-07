@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Vehículos - TP8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ver Vehículos</h1>
+
+    <section id="seccion-ver-vehiculos" class="seccion">
+        <div class="filtros">
+            <label for="filtro-vehiculo-marca">Filtrar por marca:</label>
+            <select id="filtro-vehiculo-marca" onchange="mostrarVehiculos()">
+                <option value="Todos">Todos</option>
+            </select>
+
+            <label for="filtro-vehiculo-tipo">Filtrar por tipo:</label>
+            <select id="filtro-vehiculo-tipo" onchange="mostrarVehiculos()">
+                <option value="Todos">Todos</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+            </select>
+        </div>
+
+        <table id="tabla-vehiculos">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Patente</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla-vehiculos">
+            </tbody>
+        </table>
+    </section>
+
+    <a href="index.html">Volver al inicio</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

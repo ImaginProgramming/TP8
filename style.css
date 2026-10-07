@@ -1,0 +1,55 @@
+/* Estilos mínimos para TP8 - Gestor Automotor (R4) */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Separación visual entre las cuatro secciones */
+.seccion {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Campos de los formularios */
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    display: inline-block;
+    width: 140px;
+}
+
+/* Contenedor de filtros */
+.filtros {
+    margin-bottom: 15px;
+}
+
+.filtros label {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.filtros label:first-child {
+    margin-left: 0;
+}
+
+/* Tablas con bordes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

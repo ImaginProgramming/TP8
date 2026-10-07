@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Vehículo - TP8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Crear Vehículo</h1>
+
+    <section id="seccion-crear-vehiculo" class="seccion">
+        <form id="form-vehiculo" onsubmit="return false;">
+            <div class="campo">
+                <label for="vehiculo-marca">Marca:</label>
+                <input type="text" id="vehiculo-marca" placeholder="Marca (ej: Toyota)">
+            </div>
+
+            <div class="campo">
+                <label for="vehiculo-modelo">Modelo:</label>
+                <input type="text" id="vehiculo-modelo" placeholder="Modelo (ej: Corolla)">
+            </div>
+
+            <div class="campo">
+                <label for="vehiculo-patente">Patente:</label>
+                <input type="text" id="vehiculo-patente" placeholder="Patente (ej: AB123CD)">
+            </div>
+
+            <div class="campo">
+                <label for="vehiculo-tipo">Tipo:</label>
+                <select id="vehiculo-tipo">
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                </select>
+            </div>
+
+            <button type="button" id="btn-agregar-vehiculo" onclick="agregarVehiculo()">Agregar Vehículo</button>
+        </form>
+    </section>
+
+    <a href="index.html">Volver al inicio</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

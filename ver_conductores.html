@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Conductores - TP8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ver Conductores</h1>
+
+    <section id="seccion-ver-conductores" class="seccion">
+        <div class="filtros">
+            <label for="filtro-conductor-seguro">Filtrar por seguro:</label>
+            <select id="filtro-conductor-seguro" onchange="mostrarConductores()">
+                <option value="Todos">Todos</option>
+                <option value="SI">SI</option>
+                <option value="NO">NO</option>
+            </select>
+
+            <label for="filtro-conductor-carnet">Filtrar por tipo carnet:</label>
+            <select id="filtro-conductor-carnet" onchange="mostrarConductores()">
+                <option value="Todos">Todos</option>
+                <option value="A1">A1</option>
+                <option value="A2">A2</option>
+                <option value="A3">A3</option>
+            </select>
+        </div>
+
+        <table id="tabla-conductores">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Tipo Carnet</th>
+                    <th>Seguro</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo-tabla-conductores">
+            </tbody>
+        </table>
+    </section>
+
+    <a href="index.html">Volver al inicio</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
